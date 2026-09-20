@@ -1,0 +1,26 @@
+more-exp:
+
+  # Turn this off and mobs drop their normal vanilla XP again.
+  # Nothing else in this file matters while it's false.
+  enabled: true
+
+  # What one level of Looting is worth, as a percentage of the XP
+  # the mob was already going to drop.
+  # At 30, a zombie worth 5 XP gives 9.5 with Looting III, which rounds up to 10.
+  # Set it to 0 if you want the bonus gone but the plugin still loaded.
+  # Range: 0.00 - 1000.00, two decimal places at most.
+  exp-per-looting-level-percent: 30.00
+
+  # Hard ceiling for a single mob. It's here so that a slip of the hand on the
+  # line above can't dump thousands of XP out of one kill.
+  # It only ever trims the bonus. XP a mob was already dropping is never reduced.
+  # Range: 1 - 100000.
+  max-xp-per-kill: 10000
+
+  rounding:
+
+    # 25 XP with Looting III lands on exactly 47.5. This decides where it goes.
+    # NEAREST - 47.5 becomes 48
+    # DOWN    - 47.5 becomes 47
+    # UP      - 47.1 becomes 48
+    mode: NEAREST

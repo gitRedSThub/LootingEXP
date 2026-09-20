@@ -1,0 +1,18 @@
+name: LootingEXP
+version: '${project.version}'
+description: '${project.description}'
+main: me.redst.lootingEXP.LootingEXP
+api-version: '1.21.11'
+authors: [ _RedST ]
+
+commands:
+  lootingexp:
+    description: View and change the LootingEXP settings.
+    aliases: [ lexp ]
+    usage: /lootingexp help
+    permission: lootingexp.admin
+
+permissions:
+  lootingexp.admin:
+    description: Allows viewing and changing the LootingEXP settings.
+    default: op
